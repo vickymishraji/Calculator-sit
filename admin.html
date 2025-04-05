@@ -1,0 +1,24 @@
+<CALCULATOR>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calculator">
+    <h1>Admin Panel</h1>
+    <input type="password" id="adminPass" placeholder="Enter Admin Password" />
+    <button onclick="login()">Login</button>
+
+    <div id="adminContent" style="display:none;">
+      <h2>Calculation History</h2>
+      <ul id="historyList"></ul>
+      <button onclick="clearHistory()">Clear History</button>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

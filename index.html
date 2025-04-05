@@ -1,0 +1,39 @@
+<CALCULATOR>
+    <html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calculator">
+    <h1>Advanced Calculator</h1>
+    <input type="number" id="num1" placeholder="Enter first number" />
+    <input type="number" id="num2" placeholder="Enter second number (if needed)" />
+
+    <div class="buttons">
+      <button onclick="setOperator('+')">+</button>
+      <button onclick="setOperator('-')">−</button>
+      <button onclick="setOperator('*')">×</button>
+      <button onclick="setOperator('/')">÷</button>
+      <button onclick="setOperator('%')">%</button>
+    </div>
+
+    <div class="buttons">
+      <button onclick="calculateSquare()">x²</button>
+      <button onclick="calculateCube()">x³</button>
+      <button onclick="calculate()">=</button>
+      <button onclick="clearCalc()">C</button>
+    </div>
+
+    <div class="result">
+      <h2>Result: <span id="result">0</span></h2>
+    </div>
+
+    <a href="admin.html" style="margin-top: 10px; display: inline-block;">Go to Admin Panel</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
